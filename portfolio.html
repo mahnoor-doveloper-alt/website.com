@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahnoor Zaheer</title>
+    <link rel="icon" href="images/mh.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icon Link (head mein add karo) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <img src="images/mh.png" alt="Mahnoor">
+
+                    MAH<span>OOR</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+<body>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Frontend Developer & <span>UI/UX Designer</span></h1>
+                    <p>I design and code beautifully simple things, and I love what I do. With a focus on responsive design and user experience, I create websites that stand out.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                    
+                </div>
+                <div class="hero-image">
+                    <img src="images/mh.png" alt="Mahnoor - Web Developer">
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- About Section -->
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <h3>Curious about me? Here you have it:</h3>
+        <p>I'm a passionate frontend developer based in Pakistan, with a strong focus on creating interactive, responsive websites that provide excellent user experiences. I've been coding for over 7 months and have worked on various projects ranging from simple landing pages
+             to complex web applications.</p>
+        <p>My approach combines technical expertise with an eye for design, ensuring that the websites I build not only function flawlessly but also look stunning. I'm constantly learning new technologies and techniques to stay at the forefront of web development.</p>
+        <p>When I'm not coding, you can find me exploring UI/UX design trends, reading tech blogs, or enjoying a good cup of coffee while brainstorming my next project.</p>
+        
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-number">20+</div>
+            <div class="stat-text">Projects Completed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">7</div>
+            <div class="stat-text">months Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">5</div>
+            <div class="stat-text">Happy Clients</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">1</div>
+            <div class="stat-text">Awards Received</div>
+          </div>
+        </div>
+      </div>
+
+      <section class="video-section">
+  <div class="video-container">
+    <h2>Get to Know Me</h2>
+
+    <div class="video-wrapper">
+      <!-- Video Thumbnail + Play Icon -->
+      <div class="video-placeholder" onclick="playVideo()">
+        <img src="images/kk.jpg" alt="Video Thumbnail">
+        <div class="play-icon">
+          <i class="fas fa-play"></i>
+        </div>
+      </div>
+
+      <!-- Actual Video -->
+      <video id="myVideo" controls style="display:none;">
+        <source src="images/no.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+
+</section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup, accessibility, and modern HTML5 features.</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Flexbox, Grid, animations, and responsive design principles.</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>ES6+, DOM manipulation, and interactive web features.</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <p>Component-based architecture and state management.</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered design principles and prototyping.</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Creating websites that work on all device sizes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-container">
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="images/mok.jpg" alt="E-commerce Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://blogers-nine.vercel.app/#create-post"><i class="fas fa-link"></i></a>
+                                <a href="https://blogers-nine.vercel.app/#create-post"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Blogging Platform Website</h3>
+                        <p>While developing this website, I faced common challenges and errors like every web developer. <P>To ensure quality and satisfaction,
+                             I even rebuilt the website
+                             once  especially improving the navigation bar.</P>
+                              This project helped me learn a lot and I’m continuously improving my skills.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Html</span>
+                            <span class="project-tag">Css</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="images/mn.jpg" alt="Weather App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://mahnoor-doveloper-alt.github.io/onepsge/"><i class="fas fa-link"></i></a>
+                                <a href="https://mahnoor-doveloper-alt.github.io/onepsge/"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Clone Copy of Onepage Bootstrap Template</h3>
+                        <p>Like any professional developer,
+                             I faced common challenges especially in the hero section<p>which required extra effort to perfect. 
+                             Through problem-solving and testing, 
+                            I successfully overcame these issues</p> and completed a fully responsive, high-quality website.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Html 5</span>
+                            <span class="project-tag">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="images/mah.jpg" alt="Task Manager">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://mahnoor-doveloper-alt.github.io/mmm/"><i class="fas fa-link"></i></a>
+                                <a href="https://mahnoor-doveloper-alt.github.io/mmm/"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Business Website for a Client</h3>
+                        <p>Built a responsive client website . 
+                            Faced several real-world challenges, especially with layout and functionality but resolved them
+                             through testing and problem solving. 
+                            This project enhanced my skills and taught me valuable lessons about building 
+                            client-focused websites and also learned new techniques, and user-friendly result.”</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Html</span>
+                            <span class="project-tag">Css</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Talk</h3>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <p>KASHMIR POINT, MURREE, Pakistan</p>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <p>+92 141836979</p>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <p>mahnoorzaheer95@gmail.com</p>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <p>www.mahnoor.dev</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="javascript.js"></script>
+
+</body>
+    <!-- Footer -->
+    <footer>
+        
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">Mahn<span>oor</span></a>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <p class="copyright">&copy; 2025 Mahnoor. All Rights Reserved.</p>
+            </div>
+        </div>
+        <div class="social-icons">
+  <a href="https://www.facebook.com/profile.php?id=61572246246633" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  
+  <a href="https://www.fiverr.com/s/8z9jY8o" target="_blank" class="fiverr-icon">F</a>
+  
+  <a href="https://www.linkedin.com/in/mahnoor-zaheer-20175433a" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+</div>
+
+    </footer>
+<a href="https://wa.me/923141836979" target="_blank" class="whatsapp-float">
+  <i class="fab fa-whatsapp"></i>
+</a>
+    
+
+</html>

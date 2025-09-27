@@ -1209,3 +1209,202 @@
   display: inline-block;
   vertical-align: middle;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================================
+   DESKTOP RESPONSIVENESS FIXES
+   These styles ensure proper display on large screens
+   without changing your original design
+============================================= */
+
+/* Fix for very large screens (1200px and above) */
+@media (min-width: 1200px) {
+    /* Ensure container doesn't get too wide */
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    
+    /* Hero section improvements for large screens */
+    .hero-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+    }
+    
+    .hero-text {
+        flex: 1;
+        max-width: 600px;
+    }
+    
+    .hero-image {
+        flex: 1;
+        max-width: 500px;
+    }
+    
+    .hero-text h1 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+    }
+    
+    /* About section layout fix */
+    .about-content {
+        display: flex;
+        align-items: flex-start;
+        gap: 60px;
+    }
+    
+    .about-text {
+        flex: 1;
+    }
+    
+    .video-section {
+        flex: 1;
+        margin-top: 0;
+    }
+    
+    /* Skills grid improvement */
+    .skills-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    
+    /* Projects grid improvement */
+    .projects-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    
+    /* Contact section layout fix */
+    .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: start;
+    }
+    
+    /* Footer content alignment */
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .footer-links {
+        margin-bottom: 0;
+    }
+}
+
+/* Fix for extra large screens (1400px and above) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+    
+    .skills-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Fix for medium-large screens (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Ensure content doesn't overflow on large screens */
+@media (min-width: 768px) {
+    /* Fix navigation spacing */
+    .nav-links {
+        gap: 30px;
+    }
+    
+    /* Improve section spacing */
+    .section {
+        padding: 100px 0;
+    }
+    
+    /* Better button sizing */
+    .btn {
+        padding: 14px 32px;
+        font-size: 16px;
+    }
+}
+
+/* Prevent text from becoming too wide on large screens */
+.hero-text p, 
+.about-text p, 
+.project-info p {
+    max-width: 100%;
+    line-height: 1.6;
+}
+
+/* Fix video section on desktop */
+@media (min-width: 992px) {
+    .video-wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+/* Ensure images don't stretch too much */
+.hero-image img,
+.project-image img,
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Improve stat items layout on desktop */
+@media (min-width: 768px) {
+    .about-stats {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Social icons positioning fix */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* WhatsApp button positioning fix */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
